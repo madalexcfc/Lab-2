@@ -58,6 +58,6 @@ if __name__ == '__main__':
     print(f"Библиография сохранена в файл {OUTPUT_BIBLIOGRAPHY_PATH}")
 
     currencies = parse_currency_xml(CURRENCY_XML_PATH)
-    print("Извлеченные данные о валютах:")
+    print("Извлеченные данные:")
     for currency in currencies:
         print(f"{currency['code']}: {currency['name']} - {currency['value']} RUB")
